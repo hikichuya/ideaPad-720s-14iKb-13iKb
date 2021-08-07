@@ -29,6 +29,8 @@ USB定制 雷电3 储存卡
 
 iMessage和FaceTime
 
+触控板和手势
+
 （带的序列号是白果的，可以用，别改序列号否则就会用不了，但可以改机型编码）
 
 无线网络
@@ -46,3 +48,20 @@ HDMI接口（可以使用雷电转接）
 
 NVIDA 独立显示卡
 
+
+# 开启HIDPi
+
+使用此处的脚本开启：https://github.com/xzhih/one-key-hidpi
+
+开启时请勿注入EDID，除非config中预置的EDID不适合你。
+
+建议开启以下两个分辨率：1440x810 1600x900
+
+前者缩放150%，更加细腻；后者缩放120%，Nx900的分辨率更贴近Macbook的缩放（可以使启动台图标大小变得和白果一样）
+
+由于显卡性能问题，开启HIDPI可能会导致卡顿！
+
+
+
+
+如果由于显示问题而无法引导，建议尝试删除Config中DeviceProperties的子项中的AAPL00,override-no-connect一项，再尝试开机！
